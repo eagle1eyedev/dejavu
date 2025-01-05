@@ -29,6 +29,10 @@ body {
     color: #2c2c2c;
   }
 
+  h2{
+    font-size: 36px;
+  }
+
   .up-header{
     padding: 10px;
     background-color: rgb(11, 11, 11);
@@ -302,7 +306,6 @@ footer {
 }
 
 .news .event {
-    /* border-bottom: 1px solid #ddd; */
     padding: 15px 0;
     padding-left: 5%;
   }
@@ -364,10 +367,25 @@ footer {
     color: #222;
   }
   
-  .rules{
+  .rules h1 {
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 5%;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .rules p{
     text-align: justify;
     font-size: 18px;
-    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 8%;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .rules h1:hover, p:hover {
+    color: #b00000;
   }
 
 .introduce {
@@ -450,7 +468,6 @@ footer {
 
 .services {
   padding-inline: 25px;
-  /* background-color: #111; */
 }
 
 .services h2 {
@@ -503,20 +520,6 @@ footer {
   border-radius: 8px;
   margin-top: 3%;
 }
-
-/* .service-item2:first-child {
-  margin-right: 0;
-  margin-left: 35%;
-}
-
-.service-item2:nth-child(1){
-  margin-inline: 2%;
-}
-
-.service-item2:last-child {
-  margin-left: 0;
-  margin-right: 35%;
-} */
 
 .service-item2 img {
   max-width: 100%;
@@ -594,9 +597,9 @@ footer {
 
 .cont-images {
   display: flex;
-  gap: 10px; /* Разстояние между снимките */
-  height: 300px; /* Височина на снимките */
-  overflow: hidden; /* Скриване на съдържание извън контейнера */
+  gap: 10px;
+  height: 300px;
+  overflow: hidden;
   margin-inline: 5%;
 }
 
@@ -618,7 +621,7 @@ footer {
 .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Поддържа пропорциите на снимката */
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -658,10 +661,10 @@ footer {
   position: relative;
   width: 100%;
   margin: auto;
-  background-color: white; /* Бял фон */
-  overflow: hidden; /* Скрива излишните изображения */
-  border: 1px solid #ddd; /* Лека граница */
-  border-radius: 8px; /* Заоблени ъгли */
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   margin-inline: 30px;
 }
 
@@ -676,11 +679,11 @@ footer {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* Плавен преход на видимост */
+  transition: opacity 1s ease-in-out;
 }
 
 .slideshow-images img {
-  border-radius: 5px; /* Леко заоблени краища на изображенията */
+  border-radius: 5px;
 }
 
 .slideshow-heading h3{
@@ -700,12 +703,12 @@ footer {
   color: #333;
   margin: 20px;
   display: inline-block;
-  overflow: hidden; /* Скрива текста, докато се изписва */
+  overflow: hidden;
   position: relative;
 }
 
 .typewriter-container::after {
-  content: "|"; /* Имитация на курсор */
+  content: "|";
   font-weight: bold;
   color: #333;
   animation: blink-cursor 0.7s steps(2, start) infinite;
@@ -740,12 +743,11 @@ footer {
   border: 2px solid #b00000;
   flex: 1;
   box-shadow: 10px 10px 30px #222;
+  min-width: 300px;
 }
 
 .working-hours table {
-  /* width: 100%; */
   border-collapse: collapse;
-
 }
 
 .working-hours {
@@ -772,6 +774,7 @@ iframe {
 .contacts {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .gallery-sections h1{
@@ -788,8 +791,8 @@ iframe {
 }
 
 .gallery-sections h2 {
-  font-size: 24px;
   margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .gallery-section {
@@ -801,7 +804,6 @@ iframe {
   max-width: 100%;
   margin: auto;
   overflow: hidden;
-  /* border: 2px solid #b00000; */
   box-shadow: 2px 2px 5px #b000006a;
   border-radius: 10px;
 }
